@@ -149,3 +149,12 @@ $noteText.on("keyup", handleRenderSaveBtn);
 
 // Gets and renders the initial list of notes
 getAndRenderNotes();
+
+
+var express = require('express');
+var router = express.Router();
+app.get('/notes', function (req, res) {
+  res.send('GET request to the notes.html')})
+  app.get('/*', function (req, res) {
+    res.send('GET request to the index.html')})
+    
